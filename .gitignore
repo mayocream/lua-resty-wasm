@@ -1,0 +1,5 @@
+WasmEdge/
+deps/
+tmp/
+lib/*.so
+*.so
