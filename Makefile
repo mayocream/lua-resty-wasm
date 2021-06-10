@@ -29,3 +29,6 @@ install:
 
 run:
 	LD_LIBRARY_PATH=$(pwd)/lib /usr/local/openresty/luajit/bin/luajit lib/resty/wasm/wasm.lua
+
+build-test-wasm-add:
+	tinygo build -o ./tmp/add.wasm -target wasm ./test/wasm/add/main.go
